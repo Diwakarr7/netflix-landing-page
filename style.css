@@ -318,19 +318,23 @@ video{
 }
 .answer{
   background-color: rgba(114, 114, 114, 0.521);
-  padding: 8px 24px;
+  /* padding: 8px 24px; */
+  /* padding: 0; */
   transition: trasnsform  1.5 ease-out;
+     max-height: 0;
+  overflow: hidden;
 
 }
 .faq.active .answer{
-    max-height: 0;
-  overflow: hidden;
-  padding: 0;
+   max-height: 300px;
+   transition: trasnsform  1.5 ease-out;
+   padding: 0;
 }
 
 .answer p{
    font-size: 16px;
     line-height: 1.2;
+    padding: 12px 24px;
 }
 .faq:hover .question{
   background-color: rgba(131, 129, 129, 0.521);
